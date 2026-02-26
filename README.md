@@ -14,6 +14,20 @@
 
 
 
+\## File Structure
+
+* README(메인)
+* MATLAB/: MATLAB 핵심 코드 1~3개
+* Results: 결과 이미지(Before / After)
+* 논문 링크
+* pseudo\_pipeline.md :사고흐름
+
+전체 MATLAB 코드: raw\_code/로 보조 or "요청 시 제공"
+
+
+
+
+
 \## 연구 성격 요약
 
 \## "관련 연구는 석사 논문 기반" (논문, 특허 리스트 장황히 X)
