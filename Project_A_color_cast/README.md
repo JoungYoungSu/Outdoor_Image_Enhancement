@@ -148,6 +148,7 @@
 * **비교군:** GWA(Gray World Assumption), HRDCP, NGCCLAHE
 
 * **결과:**Proposed Algorithm(PA)이 과보정 없이 가장 안정적인 색조 복원 결과를 시각적으로 달성함.
+  
 | Input (Original) | GWA | HRDCP | NGCCLAHE | **Proposed (PA)** |
 | :---: | :---: | :---: | :---: | :---: |
 | ![img](./results/Simulation Outputs/img1_input.png) | ![img](./results/Simulation Outputs/img1_gwa.png) | ![img](./results/Simulation Outputs/img1_hrdcp.png) | ![img](./results/Simulation Outputs/img1_ngc.png) | **![img](./results/Simulation Outputs/img1_pa.png)** |
