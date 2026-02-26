@@ -58,7 +58,6 @@
 ![대기광 영역 검출 알고리즘](./results/method/Flowchart of airlight dectetion.png)
 </details>
 
-<br>
 
 ### 2. 영상의 색조 분류 및 화이트 밸런스 적용
 
@@ -133,10 +132,10 @@
 ![색 공간 비교](./results/result\_colorspace\_lab.png)
 *(좌: RGB 기반 GWA 적용 시 색상 왜곡 발생 / 우: LAB 기반 제안 알고리즘 적용 시 색상 유지)*
 
-<br>
 
 ### 2. 시뮬레이션(Simulation) 비교 알고리즘
 * **비교군:** GWA(Gray World Assumption), HRDCP, NGCCLAHE
+
 * **결과:**Proposed Algorithm(PA)이 과보정 없이 가장 안정적인 색조 복원 결과를 시각적으로 달성함.
 ![비교 결과 이미지](./results/comparison\_with\_gwa.png)
 
