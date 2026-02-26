@@ -128,7 +128,11 @@
 
 * **대기광 검출 비교:** 기존 상위 0.1% 기반 방식의 한계(근경의 밝은 객체 오검출)를 쿼드 트리 분할 방식을 통해 극복한 결과입니다.
 
-![대기광 검출 비교](./results/result\_airlight\_detection.png)
+![대기광 검출 비교]
+| 기존 상위 0.1% 방식 (흰색 객체 오검출) | 우: 쿼드 트리 기반 제안 방식 (안정적인 대기광 영역 확보) |
+| :---: | :---: |
+| ![img](./results/Visual Comparison/Airligtdetection/(a) Brightest top 1% pixel.tiff) | ![img](./results/Visual Comparison/Airligtdetection/(b) Proposed.emf) |
+
 *(좌: 기존 상위 0.1% 방식 (흰색 객체 오검출) / 우: 쿼드 트리 기반 제안 방식 (안정적인 대기광 영역 확보))*
 
 
@@ -144,7 +148,10 @@
 * **비교군:** GWA(Gray World Assumption), HRDCP, NGCCLAHE
 
 * **결과:**Proposed Algorithm(PA)이 과보정 없이 가장 안정적인 색조 복원 결과를 시각적으로 달성함.
-![비교 결과 이미지](./results/comparison\_with\_gwa.png)
+| Input (Original) | GWA | HRDCP | NGCCLAHE | **Proposed (PA)** |
+| :---: | :---: | :---: | :---: | :---: |
+| ![img](./results/Simulation Outputs/img1_input.png) | ![img](./results/Simulation Outputs/img1_gwa.png) | ![img](./results/Simulation Outputs/img1_hrdcp.png) | ![img](./results/Simulation Outputs/img1_ngc.png) | **![img](./results/Simulation Outputs/img1_pa.png)** |
+| ![img](./results/img2_input.png) | ![img](./results/img2_gwa.png) | ![img](./results/img2_hrdcp.png) | ![img](./results/img2_ngc.png) | **![img](./results/img2_pa.png)** |
 
 
 **💡 덧붙임:** 위 이미지는 대표적인 하이라이트 결과이며, **전체 시뮬레이션 비교군(HRDCP, NGCCLAHE 등) 및 다수의 테스트 셋 결과**는 아래 폴더에 모두 정리되어 있습니다.
