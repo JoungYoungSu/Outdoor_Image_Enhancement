@@ -21,13 +21,13 @@
 
 ```text
 
-├── main\_color\_cast.m    # 화이트 밸런스 전체 실행 파이프라인
-├── core\_methods/        # 핵심 알고리즘 모듈 (리팩토링 완료)
-│   ├── color\_cast\_correction.m  # 전체 실행 
-│   ├── detect\_atmospheric\_light.m  # 1. 대기광 검출 함수
-│   ├── split\_into\_quadrants.m  # 쿼드 트리 영역 분할 함수
-│   ├── apply\_white\_balance.m  # 2. 적응형 화이트 밸런스 함수  
-│   └── lab\_to\_rgb.m # CIELAB을 RGB로 다시 변환하는 함수
+├── main_color_cast.m    # 화이트 밸런스 전체 실행 파이프라인
+├── core_methods/        # 핵심 알고리즘 모듈 (리팩토링 완료)
+│   ├── color_cast_correction.m  # 전체 실행 
+│   ├── detect_atmospheric_light.m  # 1. 대기광 검출 함수
+│   ├── split_into_quadrants.m  # 쿼드 트리 영역 분할 함수
+│   ├── apply_white_balance.m  # 2. 적응형 화이트 밸런스 함수  
+│   └── lab_to_rgb.m # CIELAB을 RGB로 다시 변환하는 함수
 ├── results/             # 단계별 결과 및 비교 시각화 이미지
 │   ├── comparison/  # 기존 방법과 비교
 |	  │   ├── Airligt detection/  
