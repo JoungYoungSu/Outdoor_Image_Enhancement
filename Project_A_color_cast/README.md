@@ -13,7 +13,7 @@
 2. **대기광 오검출**: 단순히 영상 내 상위 0.1% 밝기의 화소를 대기광으로 추정하는 방식은, 근경의 밝은 흰색 객체(예: 흰 차, 건물)를 대기광으로 잘못 인식하는 문제 유발
 3. **색상 과증폭 현상**: RGB 색 공간에서 화이트 밸런스 적용 시, 밝기와 색상이 분리되지 않아 반대 색상이 비정상적으로 증폭되는 부작용 발생
 
-> **💡목표:** 본 연구는 **영역 기반 대기광 추정**과 **LAB 색 공간 기반의 적응형 가중치**를 도입하여 이러한 한계들을 수학적/통계적으로 완화하는 것을 목표로 합니다.
+> **💡목표:** 본 연구는 **영역 기반 대기광 추정**과 **LAB 색 공간 기반의 적응형 가중치**를 도입하여 위 한계들을 수학적/통계적으로 완화하도록 합니다.
 
 <br>
 
@@ -21,13 +21,13 @@
 
 ```text
 
-├── main\_color\_cast.m    # 화이트 밸런스 전체 실행 파이프라인
-├── core\_methods/        # 핵심 알고리즘 모듈 (리팩토링 완료)
-│   ├── color\_cast\_correction.m  # 전체 실행 
-│   ├── detect\_atmospheric\_light.m  # 1. 대기광 검출 함수
-│   ├── split\_into\_quadrants.m  # 쿼드 트리 영역 분할 함수
-│   ├── apply\_white\_balance.m  # 2. 적응형 화이트 밸런스 함수  
-│   └── lab\_to\_rgb.m # CIELAB을 RGB로 다시 변환하는 함수
+├── main_color_cast.m    # 화이트 밸런스 전체 실행 파이프라인
+├── core_methods/        # 핵심 알고리즘 모듈 (리팩토링 완료)
+│   ├── color_cast_correction.m  # 전체 실행 
+│   ├── detect_atmospheric_light.m  # 1. 대기광 검출 함수
+│   ├── split_into_quadrants.m  # 쿼드 트리 영역 분할 함수
+│   ├── apply_white_balance.m  # 2. 적응형 화이트 밸런스 함수  
+│   └── lab_to_rgb.m # CIELAB을 RGB로 다시 변환하는 함수
 ├── results/             # 단계별 결과 및 비교 시각화 이미지
 │   ├── comparison/  # 기존 방법과 비교
 |	  │   ├── Airligt detection/  
