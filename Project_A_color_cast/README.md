@@ -30,10 +30,10 @@
 │   └── lab_to_rgb.m # CIELAB을 RGB로 다시 변환하는 함수
 ├── results/             # 단계별 결과 및 비교 시각화 이미지
 │   ├── comparison/  # 기존 방법과 비교
-|	  │   ├── Airligt detection/  
-|   │   ├── White Balance/  
-|   │   └── Simulation/ 			
-|	  └── outputs/ 
+│   │   ├── Airligt detection/  
+ |    │   ├── White Balance/  
+ |    │   └── Simulation/ 			
+ |    └── outputs/ 
 └── README.md
 
 ```
