@@ -114,18 +114,18 @@
 ## 🔄 Processing Pipeline
 
 ### 1. 알고리즘 전체 흐름 요약
-[Input Image] 
-&nbsp; ↓ 
-**[Quad-Tree Airlight Detection]** ──> 안정적인 대기광 영역 추출
-&nbsp; ↓ 
-**[LAB Color Space Conversion]** ──> 밝기와 색채 정보 분리
-&nbsp; ↓ 
-**[Tone Intensity Calculation]** ──> $E_{atm}$ 산출
-&nbsp; ↓ 
-**[Adaptive Weight Assignment]** ──> 4단계 Case 분류 및 Level 결정
-&nbsp; ↓ 
-**[Weighted Gray World WB]** ──> 색 왜곡 보정
-&nbsp; ↓ 
+[Input Image]
+      ↓
+[Quad-Tree Airlight Detection] ───> 안정적인 대기광 영역 추출
+      ↓
+[LAB Color Space Conversion]   ───> 밝기와 색채 정보 분리
+      ↓
+[Tone Intensity Calculation]   ───> E_atm 산출
+      ↓
+[Adaptive Weight Assignment]   ───> 4단계 Case 분류 및 Level 결정
+      ↓
+[Weighted Gray World WB]       ───> 가중치 기반 색 왜곡 보정
+      ↓
 [Output Image]
 
 <br>
