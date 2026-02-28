@@ -157,7 +157,7 @@
 RGB 기반 회색 세계 가설(GWA)이 유발하는 반대 색상 증폭 현상을 LAB 색공간에서 밝기와 색체를 분리 처리하여 원 영상과 유사하게 안정성을 확보한 결과입니다.
   | | Original | Colorcast Image (베일 색 R 증폭) | RGB results of GWA (반대 색 B 증폭) | LAB results of GWA (안정성 확보) |
   | :---: | :---: | :---: | :---: | :---: |
-  | **Image** | <img src="assets/Visual_Comparison/RGBvsLAB/Original.png/Visual_Comparison/RGBvsLAB/Colorcast.png" width="200"> | <img src="assets/Visual_Comparison/RGBvsLAB/RGB_Whitebalance.png" width="200"> |<img src="assets/Visual_Comparison/RGBvsLAB/LAB.png" width="200"> |
+  | **Image** | <img src="assets/Visual_Comparison/RGBvsLAB/Original.png" width="200"> | /Visual_Comparison/RGBvsLAB/Colorcast.png" width="200"> | <img src="assets/Visual_Comparison/RGBvsLAB/RGB_Whitebalance.png" width="200"> |<img src="assets/Visual_Comparison/RGBvsLAB/LAB.png" width="200"> |
   | **Histogram** | <img src="assets/Visual_Comparison/RGBvsLAB/Original_graph.png" width="200"> | <img src="assets/Visual_Comparison/RGBvsLAB/Colorcast_graph.png" width="200"> | <img src="assets/Visual_Comparison/RGBvsLAB/RGB_graph.png" width="200"> | <img src="assets/Visual_Comparison/RGBvsLAB/LAB_graph.png" width="200"> |
   <br>
 
