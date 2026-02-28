@@ -56,7 +56,7 @@
   **[표] 원본 영상 및 4분할(Quad-Tree) 영역 시각화**
   | Original Input | A1 | A2 | A3 | A4 |
   | :---: | :---: | :---: | :---: | :---: |
-  | <img src="assets/Methods/Airlight_dectetion/Step1/input.png" width="250"><br><sup>원본 입력 영상</sup> | <img src="./assets/Methods/Airlight_dectetion/Step1/A1.png" width="150"><br><sup>좌측 상단</sup> | <img src="./assets/Methods/Airlight_dectetion/Step1/A2.png" width="150"><br><sup>우측 상단</sup> | <img src="./assets/Methods/Airlight_dectetion/Step1/A3.png" width="150"><br><sup>좌측 하단</sup> | <img src="./assets/Methods/Airlight_dectetion/Step1/A4.png" width="150"><br><sup>우측 하단</sup> |
+  | <img src="assets/Methods/Airlight_dectetion/Step1/input.png" width="150"><br><sup>원본 입력 영상</sup> | <img src="./assets/Methods/Airlight_dectetion/Step1/A1.png" width="150"><br><sup>좌측 상단</sup> | <img src="./assets/Methods/Airlight_dectetion/Step1/A2.png" width="150"><br><sup>우측 상단</sup> | <img src="./assets/Methods/Airlight_dectetion/Step1/A3.png" width="150"><br><sup>좌측 하단</sup> | <img src="./assets/Methods/Airlight_dectetion/Step1/A4.png" width="150"><br><sup>우측 하단</sup> |
 
   <br>
   
@@ -93,7 +93,7 @@
   <summary> <b> 컬러캐스트 영상의 색조 강도 예시 (Click)</b></summary>
   <br>
 
-  <img src="assets/Methods/Chroma_and_Whitebalance/Chroma.png" width="400">
+  <img src="assets/Methods/Chroma_and_Whitebalance/Chroma.png" width="500">
   <br>
   </details>
 
