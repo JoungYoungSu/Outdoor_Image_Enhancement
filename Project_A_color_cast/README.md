@@ -116,12 +116,12 @@
 ### 1. 알고리즘 전체 흐름 요약
 | 단계 | 주요 프로세스 | 결과 및 목적 |
 | :---: | :--- | :--- |
-| **Step 1** | **[Input Image]** | 입력 영상 로드 및 전처리 준비 |
-| ↓ | **[Quad-Tree Airlight Detection]** | 안정적인 대기광 영역($A$) 추출 |
-| ↓ | **[LAB Color Space Conversion]** | 밝기($L$)와 색채($a, b$) 정보 분리 |
-| ↓ | **[Tone Intensity Calculation]** | 색조 강도($E_{atm}$) 산출 |
-| ↓ | **[Adaptive Weight Assignment]** | 4단계 Case 분류 및 가중치 Level 결정 |
-| ↓ | **[Weighted Gray World WB]** | 가중치 기반 색 왜곡 보정 수행 |
+| **Step 1** | **[Input Image]** | 처리할 영상 입력 |
+| ↓ | **[Quad-Tree Airlight Detection]** | 쿼드트리 분할을 사용하여 대기광 영역($A$) 추출 |
+| ↓ | **[LAB Color Space Conversion]** | RGB를 CIELAB 색공간으로 변환 |
+| ↓ | **[Tone Intensity Calculation]** | 대기광의 색조 강도($E_{atm}$) 산출 |
+| ↓ | **[Adaptive Weight Assignment]** | 4단계 Case 분류 및 가중치 Level 할당 |
+| ↓ | **[Weighted Gray World WB]** | 가중치 기반 회색세계가설(화이트밸런스) 수행 |
 | **Final Step** | **[Output Image]** | 최종 보정 영상 출력 및 저장 |
 
 <br>
