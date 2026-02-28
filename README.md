@@ -1,40 +1,28 @@
-\# 이력서/자소서에 넣는 "대표 링크"
-
-이력서 한 줄: "Graduation Project: Atmospheric-aware Adaptive Lmage Enhancement System" + Github 링크 한줄
+\# 🧠 Outdoor Image Enhancement (야외 촬영 환경 영상 화질 개선 연구)
 
 
 
-\## 이 레포는 이런 연구 프로젝트들로 구성됨
-
-* 논문 요약
-* 특허 요약
-* 연구 주제별 프로젝트 정리
-* pseudo\_pipeine 문서
-* (필요시) 기존 레포로 연결되는 링크
+본 레포지토리는 석사 학위 연구 보고서 \*\*"야외 촬영 환경에서 영상의 가시성 및 품질 개선"\*\*에 사용된 핵심 알고리즘 파이프라인과 시뮬레이션 결과를 모아둔 아카이브입니다.
 
 
 
-\## File Structure
-
-* README(메인)
-* MATLAB/: MATLAB 핵심 코드 1~3개
-* Results: 결과 이미지(Before / After)
-* 논문 링크
-* pseudo\_pipeline.md :사고흐름
-
-전체 MATLAB 코드: raw\_code/로 보조 or "요청 시 제공"
+모든 알고리즘은 \*\*MATLAB\*\*을 기반으로 작성되었으며, 복합 열화(안개, 색 왜곡, 저조도 등)를 해결하기 위한 단계별 모듈을 5개의 하위 프로젝트로 나누어 순차적으로 정리 및 업로드하고 있습니다.
 
 
 
-
-
-\## 연구 성격 요약
-
-\## "관련 연구는 석사 논문 기반" (논문, 특허 리스트 장황히 X)
+\## 📂 Project Index (업로드 진행 상황)
 
 
 
-Original integrated research code (used during graduate study) is preserved in raw\_original\_code/.
+* **[Project 1] 색조 기반 화이트 밸런스** (`Project_A_color_cast` 폴더) 
+  * 조명 왜곡(Color Cast) 보정 및 색채 복원 알고리즘 (✅ **현재 폴더 및 README 정리 중**)
+* **[Project 2] CIELAB 색 공간에서의 디헤이징** (업데이트 예정 ⏳)
+* **[Project 3] 밝기 가중치 기반 저조도 개선** (업데이트 예정 ⏳)
+* **[Project 4] 영상 품질 보존을 위한 잡음 제거** (업데이트 예정 ⏳)
 
-Each project has been modularized and refactored for clarity and reproducibility.
+
+
+---
+
+\*※ 현재 과거 연구 데이터 및 코드를 깃허브 환경에 맞게 폴더화 및 정리하는 작업을 진행 중입니다.\*
 
