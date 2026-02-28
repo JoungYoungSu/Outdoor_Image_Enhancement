@@ -61,7 +61,6 @@
   <br>
   
   </details>
-  <br>
 
 * **Step 2:** 각 영역의 평균(Mean)과 표준편차(Std)를 기반으로 Score를 계산하여 가장 큰 영역 선택
 
@@ -78,7 +77,6 @@
   <br>
   
   </details>
-  <br>
 
 * **Step 4:** 최종 검출된 영역을 LAB 색 공간으로 변환하여 대기광(Airlight) 영역으로 확장
 
@@ -98,7 +96,6 @@
   <img src="assets/Methods/Chroma_and_Whitebalance/Chroma.png" width="400">
   <br>
   </details>
-  <br>
 
 * **Step 2:** 대규모 데이터셋 시뮬레이션을 통해 경험적으로 도출된 임계값을 기준으로 4가지 Case 분류 및 가중치(Level) 할당
   - Case 1. $E_{atm} > 0.1$ → Level = 1.0 (강한 보정)
