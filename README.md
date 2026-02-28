@@ -6,7 +6,7 @@
 <br>
 
 ## 📂 Project Index (업로드 진행 상황)
-* **[Project 1] 색조 기반 화이트 밸런스** (`Project_A_color_cast` 폴더) 
+* **[Project 1] 색조 기반 화이트 밸런스** (`./Project_A_color_cast` 폴더) 
   * 조명 왜곡(Color Cast) 보정 및 색채 복원 알고리즘 (✅ **현재 폴더 및 README 정리 중**)
 * **[Project 2] CIELAB 색 공간에서의 디헤이징** (업데이트 예정 ⏳)
 * **[Project 3] 밝기 가중치 기반 저조도 개선** (업데이트 예정 ⏳)
