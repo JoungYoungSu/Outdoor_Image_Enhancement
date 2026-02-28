@@ -1,4 +1,4 @@
-# Project A : 색조 기반 화이트 밸런스 보정 (Adaptive White Balance)
+# Project A : 색조 기반 화이트 밸런스 보정 (Adaptive White Balance for Color Cast Correction)
 
 ## 📌 Overview
 본 프로젝트는 석사 졸업 연구 주제인 "야외 촬영 환경에서 영상의 가시성 및 품질 개선" 파이프라인의 1단계인 **색조 기반 화이트 밸런스 보정 알고리즘**을 독립적인 프로젝트로 정리한 것이다. 
