@@ -1,4 +1,5 @@
 % 색조 기반 화이트 밸런스 main 스크립트
+addpath(genpath(fileparts(mfilename('fullpath'))));
 
 % 입력
 img = imread(input_path);
@@ -9,6 +10,9 @@ img = double(img)/255; % 스케일링
 if z==1, img(:,:,2)=img(:,:,1);img(:,:,3)=img(:,:,1);end
 
 % 핵심 알고리즘(color_cast_correction) 실행
-white_result = color_cast_correction(img);
+StageA = color_cast_correction(img);
 
-imwrite(white_result, output_path); %출력
+% 화이트 밸런스한 a, b 값 입력해 출력영상 확인
+rgb_StageA = lab_to_rgb(img, StageA.L, StageA.a_corr, StageA.b_corr);
+
+imwrite(rgb_StageA, output_path); %출력

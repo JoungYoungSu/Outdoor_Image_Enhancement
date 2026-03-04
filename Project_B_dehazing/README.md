@@ -25,17 +25,14 @@
 ├── core_methods/              # 핵심 알고리즘 모듈 (리팩토링 완료)
 │   ├── color_cast_correction.m    # 알고리즘 통합 실행 함수
 │   ├── detect_atmospheric_light.m # 1. 대기광 검출 함수
-│   └── apply_white_balance.m      # 2. 적응형 가중치 화이트 밸런스 함수
-
+│   ├── split_into_quadrants.m     # 쿼드 트리 기반 영역 분할 함수
+│   ├── apply_white_balance.m      # 2. 적응형 가중치 화이트 밸런스 함수  
+│   └── lab_to_rgb.m               # CIELAB을 RGB로 변환하는 함수
 ├── assets/                    # README 작성용 흐름도 및 시각화 이미지 모음
 ├── Simulation_Outputs/        # 기존 방법과 결과 비교 모음
 └── README.md                  
 
 ```
-
-※ split_into_quadrants.m 및 lab_to_rgb.m는 상위 프로젝트(Outdoor_Image_Enhancement)의 utils/ 폴더에 위치한 공용 함수로 관리됩니다.
-모듈 재사용성과 통합 파이프라인 확장을 고려하여 별도 분리하였습니다.
-
 
 ---
 
