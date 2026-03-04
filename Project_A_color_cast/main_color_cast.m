@@ -13,6 +13,6 @@ if z==1, img(:,:,2)=img(:,:,1);img(:,:,3)=img(:,:,1);end
 StageA = color_cast_correction(img);
 
 % 화이트 밸런스한 a, b 값 입력해 출력영상 확인
-rgb_StageA = lab_to_rgb(img, StageA.L, StageA.a_corr, StageA.b_corr);
+rgb_StageA = lab_to_rgb(StageA.L, StageA.a_corr, StageA.b_corr);
 
 imwrite(rgb_StageA, output_path); %출력
