@@ -6,7 +6,7 @@
 기존 RGB 기반 디헤이징 알고리즘은 안개 제거 과정에서 색상 왜곡이나 컬러 노이즈가 발생하는 문제가 있습니다. 
 이를 해결하기 위해 **밝기(L)와 색도(a, b)를 분리하여 처리하는 구조**를 설계하였습니다.
 
-본 반법은 Color Attenuation Prior(CAP) 기반 깊이 모델을 CIELAB 색 공간에 맞게 재정의하고, 시뮬레이션을 통해 파라미터를 재추정하여 색상 보존형 디헤이징을 수행합니다.
+본 방법은 Color Attenuation Prior(CAP) 기반 깊이 모델을 CIELAB 색 공간에 맞게 재정의하고, 시뮬레이션을 통해 파라미터를 재추정하여 색상 보존형 디헤이징을 수행합니다.
 
 **핵심 특징** 
 - RGB 기반 CAP 모델을 **CIELAB 색공간으로 재정의**
@@ -65,8 +65,6 @@ J(i,j)= (L(i,j)-LA) / max(0.05, min(0.95, e^(-βd(x)))) + LA
 - a,b: 원본 유지
 로 구성되어 색상 왜곡을 방지합니다.
 
-<br>
-
 
 ---
 
@@ -92,9 +90,6 @@ Project_B_dehazing
 └── README.md                  
 
 ```
-
-
-<br>
 
 
 ## 🧠 Methodology
@@ -145,7 +140,6 @@ Project_B_dehazing
 | ↓ | **[Dehazing]** | L 채널 복원 |
 | **Final Step** | **[Output Image]** | RGB 영상 출력 |
 
-<br>
 
 ---
 
@@ -167,9 +161,9 @@ Project_B_dehazing
 | :---: | :---: | :---: | :---: | :---: |
 | <img src="Simulation_Outputs/Example2/Input.png" width="200"> | <img src="Simulation_Outputs/Example2/DCP.png" width="200"> | <img src="Simulation_Outputs/Example2/GIF.png" width="200"> | <img src="Simulation_Outputs/Example2/CAP.png" width="200"> | <img src="Simulation_Outputs/Example2/Proposed.png" width="200"> |
 
-<br>
 ※ 실제 비교 결과 이미지는 Simulation_Outputs 폴더에서 확인할 수 있습니다.
 <br>
+
 
 ---
 
