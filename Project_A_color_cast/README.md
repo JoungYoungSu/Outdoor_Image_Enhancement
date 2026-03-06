@@ -1,7 +1,7 @@
 # Project A : 색조 기반 화이트 밸런스 보정 (Adaptive White Balance for Color Cast Correction)
 
 ## 📌 Overview
-본 프로젝트는 석사 졸업 연구 주제인 "야외 촬영 환경에서 영상의 가시성 및 품질 개선" 파이프라인의 1단계인 **색조 기반 화이트 밸런스 보정 알고리즘**을 독립적인 프로젝트로 정리한 것이다. 
+본 프로젝트는 석사 졸업 연구 주제인 "야외 촬영 환경에서 영상의 가시성 및 품질 개선" 파이프라인의 1단계인 **색조 기반 화이트 밸런스 보정 알고리즘**을 독립적인 프로젝트로 정리한 것입니다. 
 
 야외 영상에서 발생하는 색 왜곡(Color Cast)을 해결하기 위해, 기존 '회색 세계 가설(Gray World Assumption)'를 비롯한 화이트 밸런스의 한계를 분석하고, 이를 보완하는 **해석 가능한 통계 기반의 화이트 밸런스 알고리즘**을 제안합니다. 쿼드 트리(Quad-tree) 방식의 대기광 영역 검출과 영상의 색조를 직접 분류 하여 가중치 화이트 밸런스를 설계하였습니다.
 
@@ -173,20 +173,19 @@ RGB 기반 회색 세계 가설(GWA)이 유발하는 반대 색상 증폭 현상
 
 ### 2. 시뮬레이션(Simulation) 비교 알고리즘
 
-본 연구는 화이트 밸런스 토대가 된 GWA(Gray World Assumption)와 GWA를 바탕으로한 기존 복합적 보정 알고리즘을 비교군으로 선택하여, 최종 출력 결과를 비교하였습니다. 비교군은 참고 논문에 표기하였습니다.
-* **비교군:** GWA, HRDCP, NGCCLAHE 
-* **결과:** 제안한 알고리즘(Proposed Algorithm)이 기존 혼합 방식에서 흔히 발생하는 **과보정(Over-enhancement) 및 붉은기/푸른기 편향 현상을 안정적으로 억제**했습니다.
-* **기대:** 제안된 화이트 밸런스 처리를 통해 후속 영상 처리 과정에서 왜곡 없는 자연스러운 색채 복원이 가능할 것입니다.
+본 연구는 화이트 밸런스의 기초인 GWA를 포함하여, 널리 쓰이는 기존 복합 영상 보정 기법(HRDCP, NGCCLAHE)들을 대조군으로 선정하였습니다. 이를 통해 **색 왜곡(Color Cast)과 안개가 혼재된 극한 환경**에서의 최종 복원 성능을 검증하였습니다.
+* **대조군:** GWA, HRDCP, NGCCLAHE(상세 내역은 참고 논문 표기)
+* **결과:** 제안한 알고리즘(Proposed Algorithm)이 기존 혼합 방식에서 흔히 발생하는 **과보정(Over-enhancement), 색조편향(붉은기/푸른기), 밝기 포화(Saturation)** 를 효과적으로 억제하며 객체의 고유성을 안정적으로 복원하였습니다.
 
 #### 1. High Color Cast (야간/조명 왜곡 심함)
-| Inputs(Colorcast) | GWA | HRDCP | NGC CLAHE | **Proposed Algorithm** |
+| Inputs(Colorcast) | GWA | HRDCP | NGCCLAHE | **Proposed Algorithm** |
 | :---: | :---: | :---: | :---: | :---: |
-| <img src="Simulation_Outputs/inputs/High colorcast.png" width="200"> | <img src="Simulation_Outputs/results/High_colorcast/GWA.png" width="200"> | <img src="Simulation_Outputs/results/High_colorcast/HRDCP.png" width="200"> | <img src="Simulation_Outputs/results/High_colorcast/NGCCLAHE.png" width="200"> | <img src="Simulation_Outputs/results/High_colorcast/Proposed.png" width="200"> |
+| <img src="Simulation_Outputs/inputs/High_colorcast.png" width="200"> | <img src="Simulation_Outputs/results/High_colorcast/GWA.png" width="200"> | <img src="Simulation_Outputs/results/High_colorcast/HRDCP.png" width="200"> | <img src="Simulation_Outputs/results/High_colorcast/NGCCLAHE.png" width="200"> | <img src="Simulation_Outputs/results/High_colorcast/Proposed.png" width="200"> |
 
 #### 2. Little Color Cast (호박밭 / 색상 보존력 확인)
-| Inputs(Colorcast) | GWA | HRDCP | NGC CLAHE | **Proposed Algorithm** |
+| Inputs(Colorcast) | GWA | HRDCP | NGCCLAHE | **Proposed Algorithm** |
 | :---: | :---: | :---: | :---: | :---: |
-| <img src="Simulation_Outputs/inputs/Little colorcast image.png" width="200"> | <img src="Simulation_Outputs/results/Little_colorcast/GWA.png" width="200"> | <img src="Simulation_Outputs/results/Little_colorcast/HRDCP.png" width="200"> | <img src="Simulation_Outputs/results/Little_colorcast/NGCCLAHE.png" width="200"> | <img src="Simulation_Outputs/results/Little_colorcast/Proposed.png" width="200"> |
+| <img src="Simulation_Outputs/inputs/Little_colorcast.png" width="200"> | <img src="Simulation_Outputs/results/Little_colorcast/GWA.png" width="200"> | <img src="Simulation_Outputs/results/Little_colorcast/HRDCP.png" width="200"> | <img src="Simulation_Outputs/results/Little_colorcast/NGCCLAHE.png" width="200"> | <img src="Simulation_Outputs/results/Little_colorcast/Proposed.png" width="200"> |
 
 <br>
 
@@ -200,20 +199,21 @@ RGB 기반 회색 세계 가설(GWA)이 유발하는 반대 색상 증폭 현상
 
 ## 💡 Limitations & Future Work
 
-### Limitations (현 알고리즘의 한계)
+### Limitations (한계)
 
-* **경험적 임계값 의존:** 색조 강도($E_{atm}$) 분류 파라미터가 데이터셋의 시뮬레이션 설정으로 고정되어 데이터에 따라 재튜닝 필요. 복잡한 장면에서는 딥러닝에 비해 일반화 성능 제한 가능
-* **공간적 한계:** 하늘 영역이 극히 적거나 존재하지 않는 실내/근경 위주의 뷰에서는 쿼드 트리 분할 방식이 오검출 낼 가능성 존재
-* **회색 세계 가설의 근본적 한계:** 장면의 실제 평균 색상이 회색과 거리가 먼 경우 보정에 태생적 제약
-
+* **경험적 임계값 기반:** 색조 강도($E_{atm}$)에 따른 가중치는 대규모 데이터셋을 기반으로 시뮬레이션하여 설정한 값으로, 촬영 환경이나 데이터 분포가 크게 달라질 경우 추가적인 파라미터 조정이 필요할 수 있다.
+* **대기광 영역 검출 조건:** 쿼드 트리 기반 대기광 검출은 밝기와 분산을 활용하는 구조이므로, 하늘 영역이 거의 없거나 고휘도 객체(건물, 조명 등)가 많은 장면에서는 대기광을 정확히 분리하기 어려울 수 있다.
+* **회색 세계 가설 기반 구조:** 본 방법은 회색 세계 가설을 기반하므로, 장면 평균 색상이 크게 치우친 경우에는 완전한 색 복원이 어려울 수 있다.
 <br>
 
 ### Future Work(개선 방향)
 
-* **학습 기반 하이브리드 설계:** $E_{atm}$ 분포 데이터를 활용하여, 적응형 임계값을 자동 도출하는 머신러닝/딥러닝 결합 구조로 고도화
-* **검출 방식 고도화:** 에지(Edge) 분포 및 깊이 맵(Depth Map) 정보를 쿼드 트리 로직과 결합하여 대기광 검출 정확도 향상
-* **국소적(Local) 보정 확장:** 영상 전체에 동일한 가중치를 주지 않고, 영역별 조명 변화를 감지하는 Local 화이트 밸런스 기법으로 발전
+* **학습 기반 하이브리드 설계:** $E_{atm}$ 분포를 기반으로 입력 영상에 따라 자동으로 임계값을 결정하는 적응형 구조로 확장할 수 있다.
+* **검출 방식 고도화:** 에지 분포, 깊이 정보, 영역 특징을 결합하여 대기광 영역 검출 정확도를 향상시킬 수 있다.
+* **지역 기반 화이트 밸런스:** 영상 전체에 동일 가중치를 적용하는 대신, 영역별 조명 조건을 분석하여 국소적으로 색 보정을 수행하는 방식으로 발전시킬 수 있다.
+<br>
 
+※ 본 프로젝트는 딥러닝 기반 모델이 아닌 물리/통계 기반 알고리즘 구조를 통해 해석 가능성과 낮은 계산 복잡도를 유지하는 것을 목표로 설계되었다.
 
 ---
 
@@ -229,4 +229,4 @@ RGB 기반 회색 세계 가설(GWA)이 유발하는 반대 색상 증폭 현상
 비교 평가에 사용된 기존 화질 개선 알고리즘은 다음과 같습니다.
 * **GWA:** K. He, J. Sun and X. Tang, "Single image haze removal using dark channel prior," in 2009 IEEE Conference on Computer Vision and Pattern Recognition: Miami, 2009, pp. 1956-1963, DOI: 10.1109/CVPR.2009.5206515.
 * **HRDCP:** Z. Shi, Y. Feng, M. Zhao, E. Zhang and L. He, "Let You See in Sand Dust Weather: A Method Based on Halo-Reduced Dark Channel Prior Dehazing for Sand-Dust Image Enhancement," IEEE Access, vol. 7, pp. 116722-116733, 2019, DOI:  10.1109/ACCESS.2019.2936444.
-* **NGC CLAHE:** Z. Shi, Y. Feng, M. Zhao, E. Zhang, and L. He, “Normalised gamma transformation-based contrast-limited adaptive histogram equalisation with colour correction for sand–dust image enhancement,” IET Image Processing vol. 4, pp. 747-756, 2020, DOI: 10.1049/iet-ipr.2019.0992.
+* **NGCCLAHE:** Z. Shi, Y. Feng, M. Zhao, E. Zhang, and L. He, “Normalised gamma transformation-based contrast-limited adaptive histogram equalisation with colour correction for sand–dust image enhancement,” IET Image Processing vol. 4, pp. 747-756, 2020, DOI: 10.1049/iet-ipr.2019.0992.
