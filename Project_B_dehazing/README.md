@@ -1,4 +1,4 @@
-# Project B : CIELAB 색 공간에서의 디헤이징 
+# Project B : CIELAB 색 공간에서의 디헤이징 (High-Fidelity Dehazing in CIELAB Color Space)
 
 ## 📌 Overview
 본 프로젝트는 "야외 촬영 환경의 품질 개선 파이프라인"의 2단계 모듈로, CIELAB 색 공간을 활용하여 **색왜곡을 최소화하는 디헤이징 알고리즘**을 구현한 것입니다. 
