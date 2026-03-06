@@ -124,7 +124,7 @@ Project_B_dehazing
 
   | Input(white balance) | L | D | Guided Filtering | t | J | Output(RGB) |
   | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-  | <img src="Project_B_dehazing\assets\methods\whitebalance.png" width="100"> | <img src="Project_B_dehazing\assets\methods\L.png" width="100"> | <img src="Project_B_dehazing\assets\methods\D.png" width="100"> | <img src="Project_B_dehazing\assets\methods\Guide.png" width="100"> | <img src="Project_B_dehazing\assets\methods\t.png" width="100"> | <img src="Project_B_dehazing\assets\methods\J.png" width="100"> | <img src="Project_B_dehazing\assets\methods\rgb_Dehazing.png" width="100"> |
+  | <img src="Project_B_dehazing/assets/methods/whitebalance.png" width="100"> | <img src="Project_B_dehazing\assets\methods\L.png" width="100"> | <img src="Project_B_dehazing\assets\methods\D.png" width="100"> | <img src="Project_B_dehazing\assets\methods\Guide.png" width="100"> | <img src="Project_B_dehazing\assets\methods\t.png" width="100"> | <img src="Project_B_dehazing\assets\methods\J.png" width="100"> | <img src="Project_B_dehazing\assets\methods\rgb_Dehazing.png" width="100"> |
 
   <br>
   
