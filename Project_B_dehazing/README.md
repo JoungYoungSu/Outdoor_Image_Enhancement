@@ -124,7 +124,7 @@ Project_B_dehazing
 
   | Input(white balance) | L | D | Guided Filtering | t | J | Output(RGB) |
   | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-  | <img src="assets/methods/whitebalance.png" width="100"> | <img src="assets/methods/L.png" width="100"> | <img src="assets/methods/D.png" width="100"> | <img src="assets/methods/Guide.png" width="100"> | <img src="assets/methods/t.png" width="100"> | <img src="assets/methods/J.png" width="100"> | <img src="assets/methods/rgb_Dehazing.png" width="100"> |
+  | <img src="assets/methods/whitebalance.png" width="150"> | <img src="assets/methods/L.png" width="150"> | <img src="assets/methods/D.png" width="150"> | <img src="assets/methods/Guide.png" width="150"> | <img src="assets/methods/t.png" width="150"> | <img src="assets/methods/J.png" width="150"> | <img src="assets/methods/rgb_Dehazing.png" width="150"> |
 
   <br>
   
@@ -159,13 +159,13 @@ Project_B_dehazing
 #### Example 1 
 | Original | Input(Hazy) | DCP | GIF | CAP | **Proposed** |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| <img src="Project_B_dehazing\Simulation_Outputs\Example1\Original.tiff" width="200"> | <img src="Project_B_dehazing\Simulation_Outputs\Example1\Input.png" width="200"> | <img src="Project_B_dehazing\Simulation_Outputs\Example1\DCP.png" width="200"> | <img src="Project_B_dehazing\Simulation_Outputs\Example1\GIF.png" width="200"> | <img src="Project_B_dehazing\Simulation_Outputs\Example1\CAP.png" width="200"> | <img src="Project_B_dehazing\Simulation_Outputs\Example1\Proposed.png" width="200"> |
+| <img src="Simulation_Outputs/Example1/Original.tiff" width="200"> | <img src="Simulation_Outputs/Example1/Input.png" width="200"> | <img src="Simulation_Outputs/Example1/DCP.png" width="200"> | <img src="Simulation_Outputs/Example1/GIF.png" width="200"> | <img src="Simulation_Outputs/Example1/CAP.png" width="200"> | <img src="Simulation_Outputs/Example1/Proposed.png" width="200"> |
 
 
 #### Example 2 
 | Original | Input(Hazy) | DCP | GIF | CAP | **Proposed** |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| <img src="Project_B_dehazing\Simulation_Outputs\Example2\Original.tiff" width="200"> | <img src="Project_B_dehazing\Simulation_Outputs\Example2\Input.png" width="200"> | <img src="Project_B_dehazing\Simulation_Outputs\Example2\DCP.png" width="200"> | <img src="Project_B_dehazing\Simulation_Outputs\Example2\GIF.png" width="200"> | <img src="Project_B_dehazing\Simulation_Outputs\Example2\CAP.png" width="200"> | <img src="Project_B_dehazing\Simulation_Outputs\Example2\Proposed.png" width="200"> |
+| <img src="Simulation_Outputs/Example2/Original.tiff" width="200"> | <img src="Simulation_Outputs/Example2/Input.png" width="200"> | <img src="Simulation_Outputs/Example2/DCP.png" width="200"> | <img src="Simulation_Outputs/Example2/GIF.png" width="200"> | <img src="Simulation_Outputs/Example2/CAP.png" width="200"> | <img src="Simulation_Outputs/Example2/Proposed.png" width="200"> |
 
 <br>
 ※ 실제 비교 결과 이미지는 Simulation_Outputs 폴더에서 확인할 수 있습니다.
