@@ -159,13 +159,13 @@ Project_B_dehazing
 #### Example 1 
 | Original | Input(Hazy) | DCP | GIF | CAP | **Proposed** |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| <img src="Simulation_Outputs/Example1/Original.png" width="200"> | <img src="Simulation_Outputs/Example1/Input.png" width="200"> | <img src="Simulation_Outputs/Example1/DCP.png" width="200"> | <img src="Simulation_Outputs/Example1/GIF.png" width="200"> | <img src="Simulation_Outputs/Example1/CAP.png" width="200"> | <img src="Simulation_Outputs/Example1/Proposed.png" width="200"> |
+| <img src="Simulation_Outputs/Example1/original.png" width="200"> | <img src="Simulation_Outputs/Example1/Input.png" width="200"> | <img src="Simulation_Outputs/Example1/DCP.png" width="200"> | <img src="Simulation_Outputs/Example1/GIF.png" width="200"> | <img src="Simulation_Outputs/Example1/CAP.png" width="200"> | <img src="Simulation_Outputs/Example1/Proposed.png" width="200"> |
 
 
 #### Example 2 
 | Original | Input(Hazy) | DCP | GIF | CAP | **Proposed** |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| <img src="Simulation_Outputs/Example2/Original.png" width="200"> | <img src="Simulation_Outputs/Example2/Input.png" width="200"> | <img src="Simulation_Outputs/Example2/DCP.png" width="200"> | <img src="Simulation_Outputs/Example2/GIF.png" width="200"> | <img src="Simulation_Outputs/Example2/CAP.png" width="200"> | <img src="Simulation_Outputs/Example2/Proposed.png" width="200"> |
+| <img src="Simulation_Outputs/Example2/original.png" width="200"> | <img src="Simulation_Outputs/Example2/Input.png" width="200"> | <img src="Simulation_Outputs/Example2/DCP.png" width="200"> | <img src="Simulation_Outputs/Example2/GIF.png" width="200"> | <img src="Simulation_Outputs/Example2/CAP.png" width="200"> | <img src="Simulation_Outputs/Example2/Proposed.png" width="200"> |
 
 <br>
 ※ 실제 비교 결과 이미지는 Simulation_Outputs 폴더에서 확인할 수 있습니다.
