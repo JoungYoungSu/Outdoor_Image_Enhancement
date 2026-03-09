@@ -19,8 +19,25 @@
 * **[Project 4] 영상 품질 보존을 위한 잡음 제거** (업데이트 예정 ⏳)
 
 
+*※ 현재 과거 연구 데이터 및 코드를 깃허브 환경에 맞게 폴더화 및 정리하는 작업을 진행 중입니다.*
+
+
 ---
 
+[최종 파이프라인]
 
-*※ 현재 과거 연구 데이터 및 코드를 깃허브 환경에 맞게 폴더화 및 정리하는 작업을 진행 중입니다.*
+Project A
+color_cast_correction
+↓
+Project B
+main_dehazing.m
+↓
+rgb_Dehazing
+↓
+Project C
+main_lowlight_enhancement.m
+↓
+Low-light enhanced image
+
+
 
