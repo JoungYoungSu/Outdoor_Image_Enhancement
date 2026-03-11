@@ -51,7 +51,8 @@ Brightness Analysis
 - $N$: 전체 픽셀수
 
 데이터셋 전체에 대해 계산된 밝기 평균을 시각화하여 저조도 특성에 따른 영상 유형을 분석하였습니다. 
-<img src="assets/brightness_distribution_analysis/Average_brightness_of_LOL.png" width="220"> 
+
+<img src="assets/brightness_distribution_analysis/Average_brightness_of_LOL.png" width="400"> 
 
 분석 결과, 영상 밝기에 따라 다음 **3가지 유형**으로 구분할 수 있었습니다.
 - Case 1(J_{ave}>0.6): 저조도 영상가 아닌 일반 영상
@@ -102,9 +103,9 @@ Brightness Analysis
   
   | | Original | Dehazing Input(J) | Original(L) + SSR | J + SSR | Proposed(R_{SSR}) |
   | :---: | :---: | :---: | :---: | :---: | :---: |
-  | Case 1 (보정 없음, $W_{SSR}$ 0) | <img src="Project_C_low_light/assets/Visual_Comparison/Case1/Original.png" width="200"> | <img src="Project_C_low_light/assets/Visual_Comparison/Case1/rgb_Dehazing.png" width="200"> | <img src="Project_C_low_light/assets/Visual_Comparison/Case1/LR_result.png" width="200"> |<img src="Project_C_low_light/assets/Visual_Comparison/Case1/JR_result.png" width="200"> | <img src="Project_C_low_light/assets/Visual_Comparison/Case1/R_result.png" width="200"> |
-  | Case 2 ($W_{SSR}$ 0.4) | <img src="Project_C_low_light/assets/Visual_Comparison/Case2/Original.png" width="200"> | <img src="Project_C_low_light/assets/Visual_Comparison/Case2/rgb_Dehazing.png" width="200"> | <img src="Project_C_low_light/assets/Visual_Comparison/Case2/LR_result.png" width="200"> |<img src="Project_C_low_light/assets/Visual_Comparison/Case2/JR_result.png" width="200"> | <img src="Project_C_low_light/assets/Visual_Comparison/Case2/R_result.png" width="200"> |
-  | Case 3 ($W_{SSR}$ 0.8) | <img src="Project_C_low_light/assets/Visual_Comparison/Case3/Original.png" width="200"> | <img src="Project_C_low_light/assets/Visual_Comparison/Case3/rgb_Dehazing.png" width="200"> | <img src="Project_C_low_light/assets/Visual_Comparison/Case3/LR_result.png" width="200"> |<img src="Project_C_low_light/assets/Visual_Comparison/Case3/JR_result.png" width="200"> | <img src="Project_C_low_light/assets/Visual_Comparison/Case3/R_result.png" width="200"> |
+  | Case 1 (보정 없음, $W_{SSR}$ 0) | <img src="assets/Visual_Comparison/Case1/Original.png" width="200"> | <img src="assets/Visual_Comparison/Case1/rgb_Dehazing.png" width="200"> | <img src="assets/Visual_Comparison/Case1/LR_result.png" width="200"> |<img src="assets/Visual_Comparison/Case1/JR_result.png" width="200"> | <img src="assets/Visual_Comparison/Case1/R_result.png" width="200"> |
+  | Case 2 ($W_{SSR}$ 0.4) | <img src="assets/Visual_Comparison/Case2/Original.png" width="200"> | <img src="assets/Visual_Comparison/Case2/rgb_Dehazing.png" width="200"> | <img src="assets/Visual_Comparison/Case2/LR_result.png" width="200"> |<img src="assets/Visual_Comparison/Case2/JR_result.png" width="200"> | <img src="assets/Visual_Comparison/Case2/R_result.png" width="200"> |
+  | Case 3 ($W_{SSR}$ 0.8) | <img src="assets/Visual_Comparison/Case3/Original.png" width="200"> | <img src="assets/Visual_Comparison/Case3/rgb_Dehazing.png" width="200"> | <img src="assets/Visual_Comparison/Case3/LR_result.png" width="200"> |<img src="assets/Visual_Comparison/Case3/JR_result.png" width="200"> | <img src="assets/Visual_Comparison/Case3/R_result.png" width="200"> |
 
   <br>
 
@@ -153,7 +154,7 @@ Project_B_dehazing
 | ↓ | **[Weighted Fusion]** | Retinex 결과와 입력 영상 혼합 |
 | **Final Step** | **[Output Image]** | 최종 저조도 보정 영상 출력 |
 
-<img src="Project_C_low_light/assets/Methods/Flowchart.png" width="200">
+<img src="assets/Methods/Flowchart.png" width="200">
 
 
 ---
@@ -175,12 +176,12 @@ Project_B_dehazing
 #### 1. Normal Low-light Scene
 | Input(Low-light) | MSR | CLAHE | NGCCLAHE | **Proposed Algorithm** |
 | :---: | :---: | :---: | :---: | :---: |
-| <img src="Project_C_low_lightSimulation_Outputs/Example1/rgb_Dehazing.png" width="200"> | <img src="Project_C_low_light/Simulation_Outputs/Example1/MSR.png" width="200"> | <img src="Project_C_low_light/Simulation_Outputs/Example1/CLAHE.png" width="200"> | <img src="Project_C_low_light/Simulation_Outputs/Example1/NGCCLAHE.png" width="200"> | <img src="Project_C_low_light/Simulation_Outputs/Example1/R_result.png" width="200"> |
+| <img src="Simulation_Outputs/Example1/rgb_Dehazing.png" width="200"> | <img src="Simulation_Outputs/Example1/MSR.png" width="200"> | <img src="Simulation_Outputs/Example1/CLAHE.png" width="200"> | <img src="Simulation_Outputs/Example1/NGCCLAHE.png" width="200"> | <img src="Simulation_Outputs/Example1/R_result.png" width="200"> |
 
 #### 2. Complex Low-light Scene (Haze / Color Distortion)
 | Input(Low-light) | MSR | CLAHE | NGCCLAHE | **Proposed Algorithm** |
 | :---: | :---: | :---: | :---: | :---: |
-| <img src="Project_C_low_light/Simulation_Outputs/Example2/rgb_Dehazing.png" width="200"> | <img src="Project_C_low_light/Simulation_Outputs/Example2/MSR.png" width="200"> | <img src="Project_C_low_light/Simulation_Outputs/Example2/CLAHE.png" width="200"> | <img src="Project_C_low_light/Simulation_Outputs/Example2/NGCCLAHE.png" width="200"> | <img src="Project_C_low_light/Simulation_Outputs/Example2/R_result.png" width="200"> |
+| <img src="Simulation_Outputs/Example2/rgb_Dehazing.png" width="200"> | <img src="Simulation_Outputs/Example2/MSR.png" width="200"> | <img src="Simulation_Outputs/Example2/CLAHE.png" width="200"> | <img src="Simulation_Outputs/Example2/NGCCLAHE.png" width="200"> | <img src="Simulation_Outputs/Example2/R_result.png" width="200"> |
 
 <br>
 
