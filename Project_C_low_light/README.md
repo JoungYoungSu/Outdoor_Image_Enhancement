@@ -51,7 +51,7 @@ Brightness Analysis
 - $N$: 전체 픽셀수
 
 데이터셋 전체에 대해 계산된 밝기 평균을 시각화하여 저조도 특성에 따른 영상 유형을 분석하였습니다. 
-<img src="Project_C_low_light/assets/brightness_distribution_analysis/Average_brightness_of_LOL.png" width="220"> 
+<img src="assets/brightness_distribution_analysis/Average_brightness_of_LOL.png" width="220"> 
 
 분석 결과, 영상 밝기에 따라 다음 **3가지 유형**으로 구분할 수 있었습니다.
 - Case 1(J_{ave}>0.6): 저조도 영상가 아닌 일반 영상
@@ -65,7 +65,7 @@ Brightness Analysis
   기준치 0.6 이하의 데이터에 대해 0.1씩 감소하며 시뮬레이션을 진행하였으며, 0.35를 기준으로 저조도 영상이 나뉘는 것을 확인하였습니다.
   | $J_{ave}$ | 0.5690 | 0.46236 | 0.46236 | 0.46236 | 0.46236 |
   | :---: | :---: | :---: | :---: | :---: | :---: |
-  | Case 1 (보정 없음, $W_{SSR}$ 0) | <img src="Project_C_low_light/assets/brightness_distribution_analysis/0.5690.png" width="200"> | <img src="Project_C_low_light/assets/brightness_distribution_analysis/0.46236.png" width="200"> | <img src="Project_C_low_light/assets/brightness_distribution_analysis/0.38948.png" width="200"> |<img src="Project_C_low_light/assets/brightness_distribution_analysis/0.28725.png" width="200"> | <img src="Project_C_low_light/assets/brightness_distribution_analysis/0.11414.png" width="200"> |
+  | Case 1 (보정 없음, $W_{SSR}$ 0) | <img src="assets/brightness_distribution_analysis/0.5690.png" width="200"> | <img src="assets/brightness_distribution_analysis/0.46236.png" width="200"> | <img src="assets/brightness_distribution_analysis/0.38948.png" width="200"> |<img src="assets/brightness_distribution_analysis/0.28725.png" width="200"> | <img src="assets/brightness_distribution_analysis/0.11414.png" width="200"> |
   
   <br>
   
@@ -82,7 +82,7 @@ Brightness Analysis
 제안 알고리즘은 Retinex 기반 발기 보정 결과와 입력 영상 정보를 혼합하는 방식으로 동작합니다.
 
 * **Step 1. Retinex 기반 밝기 보정:** 디헤이징 결과 영상 $J$의 밝기 채널에 **Single Scale Retinex (SSR)**를 적용합니다.
-  - $log{R_{SSR}} = log(J) - log(Gaussian \times J)$
+  - $log{R_{SSR}} = log(J) - log(Gaussian * J)$
 * **Step 2. 영상 평균 밝기 계산:** 영상의 전체 밝기 평균 $J_{ave}$을 계산하여 **영상의 저조도 정도**를 판단합니다.
 * **Step 3. Adaptive Weight Assignment:** 밝기 평균값에 따라 **3가지 보정 Case**로 분류하고 Retinex 가중치를 설정합니다.
   - Case 1. $0.6 < J_{ave} $ → $W_{SSR}$ = 0 (보정 불필요)
