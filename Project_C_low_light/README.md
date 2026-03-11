@@ -155,7 +155,7 @@ Project_B_dehazing
 | ↓ | **[Weighted Fusion]** | Retinex 결과와 입력 영상 혼합 |
 | **Final Step** | **[Output Image]** | 최종 저조도 보정 영상 출력 |
 
-<img src="assets/Methods/Flowchart.png" width="200">
+<img src="assets/Methods/Flowchart.png" width="400">
 
 
 ---
