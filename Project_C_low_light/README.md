@@ -65,9 +65,9 @@ Brightness Analysis
   <br>
   
   기준치 0.6 이하의 데이터에 대해 0.1씩 감소하며 시뮬레이션을 진행하였으며, 0.35를 기준으로 저조도 영상이 나뉘는 것을 확인하였습니다.
-  | $J_{ave}$ | 0.5690 | 0.46236 | 0.46236 | 0.46236 | 0.46236 |
-  | :---: | :---: | :---: | :---: | :---: | :---: |
-  | Case 1 (보정 없음, $W_{SSR}$ 0) | <img src="assets/brightness_distribution_analysis/0.5690.png" width="200"> | <img src="assets/brightness_distribution_analysis/0.46236.png" width="200"> | <img src="assets/brightness_distribution_analysis/0.38948.png" width="200"> |<img src="assets/brightness_distribution_analysis/0.28725.png" width="200"> | <img src="assets/brightness_distribution_analysis/0.11414.png" width="200"> |
+  | $J_{ave}$ | 0.5690 | 0.4624 | 0.3895 | 0.2873 | 0.1141 | 0.0522 |
+  | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+  | images | <img src="assets/brightness_distribution_analysis/0.5690.png" width="200"> | <img src="assets/brightness_distribution_analysis/0.46236.png" width="200"> | <img src="assets/brightness_distribution_analysis/0.38948.png" width="200"> |<img src="assets/brightness_distribution_analysis/0.28725.png" width="200"> | <img src="assets/brightness_distribution_analysis/0.11414.png" width="200"> | <img src="assets/brightness_distribution_analysis/0.05222.png" width="200"> |
   
   <br>
   
