@@ -12,12 +12,12 @@ chroma_path = fullfile(dataset_root,'NYU_Hazy','chroma_new');
 
 for fileIndex = 1:1449
 
-    STR6 = num2str(fileIndex);
+    STR1 = num2str(fileIndex);
 
     % 파일 경로 생성
-    D=strcat(STR1,'D-HAZY\NYU_depth',STR6,'.tiff');
-    L=strcat(STR2,'D-HAZY\NYU_Hazy\L_new',STR6,'.tiff');
-    color=strcat(STR2,'D-HAZY\NYU_Hazy\chroma_new',STR6,'.tiff');
+    D=strcat(depth_path,STR1,'.tiff');
+    L=strcat(L_path,STR1,'.tiff');
+    color=strcat(chroma_path,STR1,'.tiff');
     
     imD = imread(D); 
     imL = imread(L); 

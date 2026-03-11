@@ -81,7 +81,7 @@ Project_B_dehazing
 │   ├── fastguidedfilter_color.m  
 │   └── boxfilter.m      
 │
-├── parameter_estimation/      # 시뮬레이션 기반 파라미터 재추정 알고리즘
+├── analysis/      # 시뮬레이션 기반 파라미터 재추정 알고리즘
 │
 ├── assets/                    # README 작성용 시각화 이미지 모음
 │

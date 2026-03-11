@@ -26,7 +26,7 @@
 │   ├── color_cast_correction.m    # 알고리즘 통합 실행 함수
 │   ├── detect_atmospheric_light.m # 1. 대기광 검출 함수
 │   └── apply_white_balance.m      # 2. 적응형 가중치 화이트 밸런스 함수
-
+├── analysis/      # 시뮬레이션 기반 색차(Chroma) 분석 알고리즘
 ├── assets/                    # README 작성용 흐름도 및 시각화 이미지 모음
 ├── Simulation_Outputs/        # 기존 방법과 결과 비교 모음
 └── README.md                  
